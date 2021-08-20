@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>Text Similarity</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+{% if error %}
+    <div class="alert alert-danger" role="alert">
+      <h1>Error: {{ error }}</h1>
+    </div>
+    <a href="/"  class="btn btn-danger">return back</a>
+{% else %}
+            <div class="alert alert-success" role="alert">
+              <h1>Cosine similarity of your texts is {{ response }}!</h1>
+                <h4>0 nu este similar, 1 este imilar</h4>
+            </div>
+            <a href="/"  class="btn btn-danger">return back</a>
+{% endif %}
+    </div>
+</body>
+</html>

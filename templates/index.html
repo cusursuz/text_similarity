@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Text Similarity</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    </head>
+    <body>
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+
+            <span class="fs-4">Compararea textelor</span>
+          </a>
+
+        </header>
+              <form method="post" action="/calculate">
+                  <div class="row">
+                      <div class="bg-light border rounded-3">
+                      <div class="col">
+                          <label>Introduceti primul text</label>
+                          <textarea class="form-control"  name="text_1" rows="4" cols="50"></textarea>
+                      </div>
+                      <div class="col">
+                          <label>Introduceti al doilea text</label>
+                          <textarea class="form-control" name="text_2" rows="4" cols="50"></textarea>
+                      </div>
+                      </div>
+                    <input class="btn btn-primary" type="submit">
+                </div>
+              </form>
+    </body>
+</html>
